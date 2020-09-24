@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('ospiti');
-});
+Route::get('/', 'OspiteController@index') -> name('index');

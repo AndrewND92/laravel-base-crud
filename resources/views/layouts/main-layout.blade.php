@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Controller + DB</title>
+    <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
     <div class="container">
-      @include('partials.header')
-      @yeld('content')
-      @include('parials.footer')
+      @include('layouts.partials.header')
+      @yield('content')
+      @include('layouts.partials.footer')
 
     </div>
   </body>
