@@ -9,13 +9,13 @@ use App\employee;
 
 $factory->define(employee::class, function (Faker $faker) {
     return [
-      'firstname' => $fakers -> firstName(),
-      'lastname'  => $fakers -> lastName(),
-      'username'  => $fakers -> unique() -> userName(),
-      'birthDay'  => $fakers -> date(),
-      'bio'       => $fakers -> text($maxNbChars = 100),
-      'salary'    => $fakers -> randomFloat($nbMaxDecimals = 2, $min = 1000, $max = 10000),
-      'rating'    => $fakers -> randomDigit(),
-      'fired'     => $fakers -> boolean(),
+      'firstname' => $faker -> firstName(),
+      'lastname'  => $faker -> lastName(),
+      'username'  => $faker -> unique() -> userName(),
+      'birthDay'  => $faker -> date(),
+      'bio'       => $faker -> text($maxNbChars = 100),
+      'salary'    => $faker -> randomFloat($nbMaxDecimals = 2, $min = 1000, $max = 10000),
+      'rating'    => $faker -> randomDigit(),
+      'fired'     => $faker -> boolean(),
     ];
 });
